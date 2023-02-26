@@ -24,7 +24,11 @@ export default function Authenticated({ auth, header, children }) {
                                 <NavLink href={route('dashboard')} active={route().current('dashboard')}>
                                     Dashboard
                                 </NavLink>
+                                <NavLink href={route('chirps.index')} active={route().current('chirps.index')}>
+                                    Chirps
+                                </NavLink>
                             </div>
+                                
                         </div>
 
                         <div className="hidden sm:flex sm:items-center sm:ml-6">
@@ -95,7 +99,11 @@ export default function Authenticated({ auth, header, children }) {
                         <ResponsiveNavLink href={route('dashboard')} active={route().current('dashboard')}>
                             Dashboard
                         </ResponsiveNavLink>
+                        <ResponsiveNavLink href={route('chirps.index')} active={route().current('chirps.index')}>
+                            Chirps
+                        </ResponsiveNavLink>
                     </div>
+                    
 
                     <div className="pt-4 pb-1 border-t border-gray-200">
                         <div className="px-4">
